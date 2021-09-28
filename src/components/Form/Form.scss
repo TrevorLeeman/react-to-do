@@ -1,0 +1,32 @@
+$inputPadding: 25px 30px;
+$margin: 14px;
+$fontSize: 1.1rem;
+$themeGreen: #CEEF86;
+
+.to-do-form{
+    margin-top: 60px;
+
+    input{
+        border: 2px solid black;
+        width: 530px;
+        padding: $inputPadding;
+        margin-right: $margin;
+        background-color: #FBFBFB;
+        font-size: $fontSize;
+        transition: ease-in-out 100ms;
+    }
+
+    button{
+        padding: $inputPadding;
+        border-radius: 3px;
+        border: unset;
+        cursor: pointer;
+        background-color: $themeGreen;
+        border: 2px solid $themeGreen;
+        font-size: $fontSize;
+
+        &:hover{
+            background-color: darken($themeGreen, 5);
+        }
+    }
+}

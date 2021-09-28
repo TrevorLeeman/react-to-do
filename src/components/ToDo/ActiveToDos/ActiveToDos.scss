@@ -1,0 +1,58 @@
+.active-to-do-wrapper{
+    width: 100%;
+    margin-top: 30px;
+
+    .actions-wrapper{
+        display: flex;
+        gap: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+
+        img{
+            width: 30px;
+            cursor: pointer;
+            transition: ease-in-out 100ms;
+
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .active-to-dos{  
+        width: 100%;
+    }
+}
+
+.floating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    animation: float 2s ease-in-out infinite;
+    user-select: none;
+    cursor: pointer;
+
+    .up-arrow{
+        width: 30px;
+    }
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.inline{
+    display: inline;
+}
+
+
+

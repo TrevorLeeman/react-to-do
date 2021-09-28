@@ -1,0 +1,24 @@
+.to-do {
+  position: relative;
+  color: #FCFCFC;
+  background-color: #3C3C3C;
+  padding: 35px 30px;
+  width: 100%;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.to-do__title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.to-do__checkbox {
+  position: absolute;
+  left: -40px;
+  cursor: pointer;
+}
+
+.to-do:not(:first-of-type) {
+  margin-top: 20px;
+}

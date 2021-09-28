@@ -1,0 +1,23 @@
+.to-do{
+    position: relative;
+    color: #FCFCFC;
+    background-color: #3C3C3C;
+    padding: 35px 30px;
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    &__title{
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    &__checkbox{
+        position: absolute;
+        left: -40px;
+        cursor: pointer;
+    }
+
+    &:not(:first-of-type){
+        margin-top: 20px;
+    }
+}
