@@ -1,6 +1,6 @@
-import {useState} from 'react'
+import {useState} from 'react';
 
-import './Form.css'
+import './Form.css';
 
 const Form = (props) => {
     const [inputValue, setInputValue] = useState('')
@@ -19,18 +19,18 @@ const Form = (props) => {
         }
     }
 
+    // Maintain current input value in state
     const inputChangeHandler = (event) => {
-        setInputValue(event.target.value)
+        setInputValue(event.target.value);
     }
 
+    // On form submit, create new ToDo and push it to parent component
     const addToDo = (event) => {
-        event.preventDefault()
+        event.preventDefault();
 
         const newToDo = new ToDo(inputValue, new Date())
-
-        props.submitHandler(newToDo)
-
-        setInputValue('')
+        props.submitHandler(newToDo);
+        setInputValue('');
     }
 
     return (
@@ -41,4 +41,4 @@ const Form = (props) => {
     )
 }
 
-export default Form
+export default Form;
