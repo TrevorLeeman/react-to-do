@@ -13,3 +13,7 @@ Created with the sole purpose of reinforcing React concepts.
 - Lifting state (child to parent component communication)
 - Rendering lists of data
 - "Key" prop
+
+### How To Run
+
+Download the project and start a local server using `npm start`
