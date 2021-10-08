@@ -14,6 +14,6 @@ Created with the sole purpose of reinforcing React concepts.
 - Rendering lists of data
 - "Key" prop
 
-### How To Run
+## How To Run
 
 Download the project and start a local server using `npm start`
