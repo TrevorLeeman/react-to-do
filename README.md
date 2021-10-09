@@ -16,4 +16,5 @@ Created with the sole purpose of reinforcing React concepts.
 
 ## How To Run
 
-Download the project and start a local server using `npm start`
+1. Download the project and install the necessary node modules using `npm install`
+2. Start a local server using `npm start`
