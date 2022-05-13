@@ -12,6 +12,7 @@
 .to-do__title {
   font-size: 18px;
   font-weight: bold;
+  word-break: break-word;
 }
 
 .to-do__checkbox {
