@@ -1,5 +1,4 @@
 $inputPadding: clamp(15px, 2vw, 25px) clamp(15px, 2vw, 30px);
-$margin: 14px;
 $fontSize: 1.1rem;
 $themeGreen: #ceef86;
 
@@ -7,14 +6,13 @@ $themeGreen: #ceef86;
   margin-top: 60px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: clamp(10px, 2vw, 25px);
   width: 100%;
 
   input {
     border: 2px solid black;
     flex-grow: 1;
     padding: $inputPadding;
-    margin-right: $margin;
     background-color: #fbfbfb;
     font-size: $fontSize;
     transition: ease-in-out 100ms;

@@ -5,7 +5,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 10px;
+  gap: clamp(10px, 2vw, 25px);
   width: 100%;
 }
 
@@ -15,7 +15,6 @@
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: clamp(15px, 2vw, 25px) clamp(15px, 2vw, 30px);
-  margin-right: 14px;
   background-color: #fbfbfb;
   font-size: 1.1rem;
   -webkit-transition: ease-in-out 100ms;
