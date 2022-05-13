@@ -16,6 +16,8 @@
     position: absolute;
     left: -40px;
     cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   &:not(:first-of-type) {

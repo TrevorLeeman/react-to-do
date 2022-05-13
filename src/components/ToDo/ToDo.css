@@ -18,6 +18,9 @@
   position: absolute;
   left: -40px;
   cursor: pointer;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .to-do:not(:first-of-type) {
