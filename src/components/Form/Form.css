@@ -1,26 +1,41 @@
 .to-do-form {
   margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
 }
 
 .to-do-form input {
   border: 2px solid black;
-  width: 530px;
-  padding: 25px 30px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: clamp(15px, 2vw, 25px) clamp(15px, 2vw, 30px);
   margin-right: 14px;
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
   font-size: 1.1rem;
   -webkit-transition: ease-in-out 100ms;
   transition: ease-in-out 100ms;
 }
 
 .to-do-form button {
-  padding: 25px 30px;
+  padding: clamp(15px, 2vw, 25px) clamp(15px, 2vw, 30px);
   border-radius: 3px;
   border: unset;
   cursor: pointer;
-  background-color: #CEEF86;
-  border: 2px solid #CEEF86;
+  background-color: #ceef86;
+  border: 2px solid #ceef86;
   font-size: 1.1rem;
+  white-space: nowrap;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .to-do-form button:hover {

@@ -1,23 +1,33 @@
-.to-do{
-    position: relative;
-    color: #FCFCFC;
-    background-color: #3C3C3C;
-    padding: 35px 30px;
+.to-do {
+  position: relative;
+  color: #fcfcfc;
+  background-color: #3c3c3c;
+  padding: clamp(15px, 2vw, 35px) clamp(15px, 2vw, 30px);
+  width: calc(100% - 40px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  float: right;
+
+  &__title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__checkbox {
+    position: absolute;
+    left: -40px;
+    cursor: pointer;
+  }
+
+  &:not(:first-of-type) {
+    margin-top: 20px;
+  }
+
+  @media only screen and (min-width: 450px) {
+    float: unset;
     width: 100%;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+}
 
-    &__title{
-        font-size: 18px;
-        font-weight: bold;
-    }
-
-    &__checkbox{
-        position: absolute;
-        left: -40px;
-        cursor: pointer;
-    }
-
-    &:not(:first-of-type){
-        margin-top: 20px;
-    }
+.completed-to-do {
+  width: 100%;
 }

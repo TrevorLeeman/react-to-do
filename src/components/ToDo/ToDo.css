@@ -1,11 +1,12 @@
 .to-do {
   position: relative;
-  color: #FCFCFC;
-  background-color: #3C3C3C;
-  padding: 35px 30px;
-  width: 100%;
+  color: #fcfcfc;
+  background-color: #3c3c3c;
+  padding: clamp(15px, 2vw, 35px) clamp(15px, 2vw, 30px);
+  width: calc(100% - 40px);
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  float: right;
 }
 
 .to-do__title {
@@ -21,4 +22,15 @@
 
 .to-do:not(:first-of-type) {
   margin-top: 20px;
+}
+
+@media only screen and (min-width: 450px) {
+  .to-do {
+    float: unset;
+    width: 100%;
+  }
+}
+
+.completed-to-do {
+  width: 100%;
 }
